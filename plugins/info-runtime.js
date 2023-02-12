@@ -6,7 +6,7 @@ let handler = async (m, { conn, args, command }) => {
 let uptime = clockString(_uptime)
 let who = m.sender
 const time = moment.tz('Asia/Jakarta').format('HH')
-  const ultah = new Date('November 4 2022 00:00:01')
+  const ultah = new Date('October 15 2023 00:00:01')
     const sekarat = new Date().getTime() 
     const Kurang = ultah - sekarat
     const ohari = Math.floor( Kurang / (1000 * 60 * 60 * 24));
@@ -31,13 +31,13 @@ const time = moment.tz('Asia/Jakarta').format('HH')
  await conn.sendButton(m.chat, runnya,wm + '\n\n' + botdate, intro, [['🥞MENU','.listmenu']], m, {
         contextInfo: {
             externalAdReply: {
-                mediaUrl: '',
-                        mediaType: 2,
+                mediaUrl: 'https://pin.it/7xb00eG',
+                        mediaType: 1,
                         description: 'anu',
                         title: `💌 Ultah Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
-                        body: `Subscribe YT My Bestie`,                                       previewType: 0,
-                        thumbnail: await (await fetch(`https://i.ibb.co/jfZVKmC/babi2.jpg`)).buffer(),
-                        sourceUrl: 'https://youtu.be/pwLZpdfO8AU'
+                        body: `𝙒𝙝𝙖𝙩𝙨𝘼𝙥𝙥 𝘽𝙤𝙩`,                                       previewType: 0,
+                        thumbnail: await (await fetch(`https://pin.it/7xb00eG`)).buffer(),
+                        sourceUrl: 'https://pin.it/7xb00eG'
             }
         }
     })
