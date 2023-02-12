@@ -9,7 +9,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 	let namae = conn.getName(m.sender)
 	const sections = [
 	{
-	title: "📆Select Your Age Here !",
+	title: "Berapa Umur kamu?!",
 	rows: [
 	    {title: "📛Random Years", rowId: '.daftar ' + namae + '.' + pickRandom(['30','29','28','27','26','25','24','23','22','21','20','19','18','17','16','15','14','13','12','11','10','9'])}
 	]
@@ -49,10 +49,10 @@ let handler = async function (m, { text, usedPrefix, command }) {
 ]
 
 const listMessage = {
-  text: `│›Please select your age at the bottom button...`,
-  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\n<❔>  BOT PRIVATE\n⚘ ᴄʀᴇᴀᴛᴇ ʙʏ ᴹᴿ᭄ King Of Bear ×፝֟͜×`,
+  text: `│›Silahkan Pilih Umur Kamu...`,
+  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\n<❔>  𝘽𝙤𝙩 𝙒𝙝𝙖𝙩𝙨𝘼𝙥𝙥\n𝙓𝙮𝙪𝙧𝙪𝙪 𝘽𝙤𝙩`,
   title: "▢━━━━「 Registration 」━━━━▢",
-  buttonText: "ഒ Register ഒ",
+  buttonText: " Register ",
   sections
 }
 
@@ -73,18 +73,9 @@ const listMessage = {
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : m.fromMe ? conn.user.jid : m.sender
   let cap = `
   ━━━━ 「 *Successful Registration* 」━━━
-  .
-╭━━「 *ᴜsᴇʀs* 」
-│▸ *sᴛᴀᴛᴜs:* ☑️ sᴜᴄᴄᴇssғᴜʟ
-│▸ *ɴᴀᴍᴇ:* ${name}
-│▸ *ᴀɢᴇ:* ${age} ʏᴇᴀʀs
-│▸ *sɴ:* ${sn}
-╰═┅═━––––––๑
-
-ꜱᴜʙꜱᴄʀɪʙᴇ ʏᴛ: ᴹᴿ᭄ King Of Bear ×፝֟͜×
 `
   let buttonMessage= {
-'document':{'url':'https://youtu.be/pwLZpdfO8AU'},
+'document':{'url':'https://pin.it/7xb00eG'},
 'mimetype':global.ddocx,
 'fileName':'▢━━━━「 Registration 」━━━━▢',
 'fileLength':fsizedoc,
@@ -93,19 +84,16 @@ const listMessage = {
 'forwardingScore':555,
 'isForwarded':true,
 'externalAdReply':{
-'mediaUrl':'https://youtu.be/pwLZpdfO8AU',
-'mediaType':2,
+'mediaUrl':'https://pin.it/7xb00eG',
+'mediaType':1,
 'previewType':'pdf',
 'title':global.titlebot,
 'body':global.titlebot,
 'thumbnail':await(await fetch('https://telegra.ph/file/6ab4daac226292a112540.jpg')).buffer(),
-'sourceUrl':'https://youtu.be/pwLZpdfO8AU'}},
+'sourceUrl':'https://pin.it/7xb00eG'}},
 'caption':cap,
 'footer':botdate,
-'buttons':[
-{'buttonId':'.menu','buttonText':{'displayText':'▣ Mҽɳυ ▣'},'type':1},
-{'buttonId':'.salken','buttonText':{'displayText':'🎈Hαʅʅσ'},'type':1}
-],
+,
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
 }
