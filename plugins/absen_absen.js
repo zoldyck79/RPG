@@ -22,12 +22,12 @@ ${conn.absen[id][2]}
 ├ Total: ${absen.length}
 ${list} 
 └────`.trim()
-    await conn.sendButton(m.chat, caption, global.wm, [['✔️ABSEN', `${usedPrefix}absen`], ['📑LIST ABSEN', `${usedPrefix}cekabsen`]], m)
+    await conn.sendButton(m.chat, caption, global.wm, [['📑LIST ABSEN', `${usedPrefix}cekabsen`]], m)
 }
 handler.help = ['absen']
 handler.tags = ['group']
 handler.command = /^(absen|hadir)$/i
 handler.group = true
-handler.admin = true
+handler.admin = false
 
 export default handler
