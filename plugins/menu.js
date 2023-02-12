@@ -40,36 +40,22 @@ let tags = {
 const defaultMenu = {
   before: `┏━━━ꕥ〔 *llı INFO USER ıll* 〕ꕥ━⬣ 
 ┃✾ *Name:* %name
-┃✾ *Tag:* %name
-┃✾ *Status:* %prems
 ┃✾ *Limit:* %limit
 ┃✾ *Role:* %role
 ┃✾ *Level:* %level [ %xp4levelup Xp For Levelup]
 ┃✾ *Xp:* %exp / %maxexp
 ┃✾ *Total Xp:* %totalexp
 ┗━ꕥ
-┏━ꕥ〔 *llı TODAY ıll* 〕ꕥ━⬣
-┃✾ *Days:* %week %weton
-┃✾ *Date:* %date
-┃✾ *Jam:* ${wib2} WIB
-┃✾ *Islamic Date:* %dateIslamic
-┗━ꕥ
-┏━ꕥ〔 *llı INFO ıll* 〕ꕥ━⬣
+┏━ꕥ〔 *llı INFO SYSTEM ıll* 〕ꕥ━⬣
 ┃✾ *Bot Name:* %me
 ┃✾ *Mode:* Public
 ┃✾ *Platform:* Linux
-┃✾ *Type:* Node.Js
-┃✾ *Baileys:* Multi Device
 ┃✾ *Uptime:* %muptime
 ┃✾ *Database:* %rtotalreg dari %totalreg
 ┗━ꕥ
-┏━ꕥ〔 *llı INFO COMMAND ıll* 〕ꕥ━⬣
-┃✾ *🅟* = Premium
-┃✾ *🅛* = Limit
-┗━ꕥ
 %readmore`.trimStart(),
   header: '┏━━━ꕥ〔 *%category* 〕ꕥ━⬣',
-    body: '┃✾ %cmd %islimit %isPremium',
+    body: '┃＊ %cmd %islimit %isPremium',
   footer: '┗━━━━━━━━━ꕥ\n',
   after: `  ${'✧\n┏━📮 *Note* :\n┃ 𝙹𝙸𝙺𝙰 𝙼𝙴𝙻𝙰𝙽𝙶𝙶𝙰𝚁 𝚃𝙾𝚂 𝙰𝙺𝙰𝙽 𝙳𝙸 𝙱𝙰𝙽 𝙿𝙴𝚁𝙼𝙰𝙽𝙴𝙽! ^_^\n┗━━━━━━━━━━━━━━━━━━━ꕥ'}`,
 }
@@ -174,7 +160,7 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
     const valor = './thumbnail.jpg'
     let url = 'https://i.ibb.co/jfZVKmC/babi2.jpg'
     let flaa = pickRandom(global.flaaaaa)
-    const ultah = new Date('November 4 2022 00:00:01')
+    const ultah = new Date('October 15 2023 00:00:01')
     const sekarat = new Date().getTime() 
     const Kurang = ultah - sekarat
     const ohari = Math.floor( Kurang / (1000 * 60 * 60 * 24));
@@ -188,13 +174,13 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
       [`۪۪ᴀᴜᴛʜᴏʀ ʙᴏᴛ`, `${usedPrefix}owner`]
     ], m, {
 contextInfo: { externalAdReply :{ showAdAttribution: true,
-                        sourceUrl: 'https://youtu.be/pwLZpdfO8AU',
-                        mediaType: 2,
-                        description: `⚘ ᴄʀᴇᴀᴛᴇ ᴹᴿ᭄ King Of Bear ×፝֟͜×`,
-                        title: `💌 Ultah Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
-                        body: `⚘ ᴄʀᴇᴀᴛᴇ by ᴹᴿ᭄ King Of Bear ×፝֟͜×`,          previewType: 0,
+                        sourceUrl: 'https://pin.it/7xb00eG',
+                        mediaType: 1,
+                        description: `🅒 αʅԃσႦҽʅυɱʋαƙʂιɳ`,
+                        title: `Ultah Owner : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
+                        body: `⚘ xʏᴜʀᴜᴜ ʙᴏᴛ`,          previewType: 0,
                         thumbnail: await (await fetch(giflogo2)).buffer(),
-                        mediaUrl: 'https://youtu.be/pwLZpdfO8AU'
+                        mediaUrl: 'https://pin.it/7xb00eG'
                         
                       }}
 })
